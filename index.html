@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>FromBoard Delivery</title>
+</head>
+
+<body>
+		<header class="header margin-bottom">
+			<div class="header__head wrapper-width">
+				<div class="logo-site">
+					<div class="logo-site__img-logo">
+						<img src="./image/logo.svg" alt="">
+					</div>
+					<div class="logo-site__text">FromBoard Delivery</div>
+				</div>
+				<div class="container-header__text-info container-header__text-info--positioned hidden-menu">
+					<div class="header__text-info wrapper-width">
+						<strong class="text">Доставляем товары из заграницы в Россию</strong>
+						<span class="text">Стоимость от 550 рублей за заказ</span>
+						<span class="text">1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</span>
+					</div>
+				</div>
+
+				<address class="header__contact-info">
+					<a href="tel:+78001234567" class="number-tel">+7 (800) 123 45-67</a>
+					<span class="header__info-number">Звонки по России бесплатны</span>
+				</address>
+
+				<div class="header__burger-menu burger-menu">
+					<span class="burger-menu__line-1"></span>
+					<span class="burger-menu__line-2"></span>
+					<span class="burger-menu__line-3"></span>
+				</div>
+			</div>
+
+			<div class="header__footer header__footer--position hidden-menu">
+				<div class="wrapper-width">
+					<nav class="header__container-navigation">
+						<ul class="list">
+							<li class="list__item"><a href="#">Калькулятор</a></li>
+							<li class="list__item"><a href="#">О нас</a></li>
+							<li class="list__item"><a href="#">Гарантии </a></li>
+							<li class="list__item"><a href="#">Отзывы</a></li>
+						</ul>
+						<a  href="/" class="btn-navigation">Оставить заявку</a>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+
+		<main class="main wrapper-width margin-bottom">
+
+			<section class="hero grid-container">
+				<div class="hero__container-information">
+					<h1 class="title hero__title">Без проблемная доставка купленных вещей из США, Европы и Азии в Россию
+					</h1>
+					<p class="paragraph hero__paragraph">Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис
+						позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
+					<div class="hero__container-img">
+						<img class="hero-img" src="./image/hero-img.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="hero__container-shipping-calculator">
+					<h2 class="title hero__title-calculator">Калькулятор доставки</h2>
+					<p class="paragraph hero__paragraph-calculator" Посчитайте, сколько будет стоить перевозка покупки из-за
+						рубежа>
+						Посчитайте, сколько будет
+						стоить перевозка покупки из-за рубежа</p>
+					<form action="#" name="calculator" method="post" class="shipping-calculator hero__shipping-calculator"
+						novalidate>
+						<div class="shipping-calculator__input-wrapper">
+							<input class="shipping-calculator__name" type="text" placeholder="Имя" name="name">
+							<span class="error-message name-error">от 3 до 15 символов</span>
+						</div>
+						<div class="grid-container-calculator">
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__email" type="email" placeholder="Почта" name="email">
+								<span class="error-message email-error">Ваш email (@)</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__phone" type="tel" placeholder="Телефон" name="phone">
+								<span class="error-message phone-error">10 цифр</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__area" type="number" placeholder="Общая площадь, м²" min="1" max="3"
+									name="area">
+								<span class="error-message area-error">Размер доставки</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__weight" type="number" placeholder="Вес, кг" min="1" max="20"
+									name="weight">
+								<span class="error-message weight-error">Вес доставки</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__country location" type="text" placeholder="Страна покупки"
+									name="purchase_country">
+								<span class="error-message purchase-country-error">от 3 до 30 символов</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__city location" type="text" placeholder="Город покупки"
+									name="purchase_city">
+								<span class="error-message purchase-city-error">от 3 до 30 символов</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__region location" type="text" placeholder="Область доставки"
+									name="delivery_region">
+								<span class="error-message delivery-region-error">от 3 до 30 символов</span>
+							</div>
+							<div class="shipping-calculator__input-wrapper">
+								<input class="shipping-calculator__city location" type="text" placeholder="Город доставки"
+									name="delivery_city">
+								<span class="error-message delivery-city-error">от 3 до 30 символов</span>
+							</div>
+						</div>
+						<button class="btn-common" type="submit">Заказать расчет</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="advantages">
+				<h2 class="title advantages__title">Наши преимущества</h2>
+				<ul class="advantages-list">
+					<li class="advantages-list__item advantage-1">
+						<h3 class="title title--small">Растаможка груза</h3>
+						<p class="paragraph paragraph--small">Мы берём на себя все формальности и бумажную волокиту, связанную с
+							растаможкой груза</p>
+					</li>
+					<li class="advantages-list__item advantage-2">
+						<h3 class="title title--small">Надёжная упаковка</h3>
+						<p class="paragraph paragraph--small">Все товары упаковываются нашими специалистами с особым вниманием к
+							деталям, гарантируя, что они дойдут в безопасности и в отличном состоянии</p>
+					</li>
+					<li class="advantages-list__item advantage-3">
+						<h3 class="title title--small">Быстро и выгодно</h3>
+						<p class="paragraph paragraph--small">Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться
+							покупками как можно скорее.</p>
+					</li>
+					<li class="advantages-list__item advantage-4">
+						<h3 class="title title--small">Удобный сервис</h3>
+						<p class="paragraph paragraph--small">Стремимся сделать процесс доставки максимально удобным для вас, чтобы
+							опыт остался приятным и беззаботным.</p>
+					</li>
+					<li class="advantages-list__item advantage-5">
+						<h3 class="title title--small">Прозрачность работы</h3>
+						<p class="paragraph paragraph--small">Мы предоставляем полный контроль над каждым этапом доставки, от
+							момента
+							заказа до момента прибытия заказа</p>
+					</li>
+					<li class="advantages-list__item advantage-6">
+						<h3 class="title title--small">Страхование груза</h3>
+						<p class="paragraph paragraph--small">Наше страхование обеспечивает полную защиту и покрытие почти все
+							неприятные и неожиданные ситуации</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="quality-guarantees">
+				<h2 class="quality-guarantees__title">Гарантии качества</h2>
+				<p class="quality-guarantees__paragraph">Наши гарантии качества включают в себя полный спектр документов,
+					необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке.Мы предоставляем
+					вам надёжность и уверенность</p>
+
+
+				<div class="quality-guarantees__img-document container-img-document">
+					<figure class="figure-document">
+						<img class="img" src="./image/document-3.svg" alt="">
+						<figcaption class="figure-document__figcaption">Свидетельство о регистрации в РФ</figcaption>
+					</figure>
+					<figure class="figure-document">
+						<img class="img" src="./image/document-1.svg" alt="">
+						<figcaption class="figure-document__figcaption">Свидетельство о регистрации в США</figcaption>
+					</figure>
+					<figure class="figure-document">
+						<img class="img" src="./image/document-4.svg" alt="">
+						<figcaption class="figure-document__figcaption">Свидетельство о регистрации в Китае</figcaption>
+					</figure>
+					<figure class="figure-document">
+						<img class="img" src="./image/document-2.svg" alt="">
+						<figcaption class="figure-document__figcaption">Свидетельство о регистрации в Великобритании</figcaption>
+					</figure>
+				</div>
+				<div class="quality-guarantees__container-more-images">
+					<a href="#" class="show-more-images btn-common">Показать больше документов</a>
+				</div>
+
+				<div class="pop-up" role="dialog" aria-modal="true">
+					<div class="pop-up__container-slider"></div>
+					<div class="container-close-and-fullscreen">
+						<button class="pop-up__close" aria-label="Закрыть диалоговое окно">X</button>
+						<button class="pop-up__fullscreen" aria-label="Перейти в полноэкранный режим"><img
+								src="/image/fullscreen.svg" alt=""></button>
+					</div>
+					<button class="prev-img" aria-label="Предыдущее изображение">&lArr;</button>
+					<button class="next-img" aria-label="Следующее изображение">&rArr;</button>
+					<div class="count-pop-up">
+						<span class="index-img-pop-up"></span>
+						<span class="length-img-pop-up"></span>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="reviews">
+				<h2 class="title reviews__title">Отзывы</h2>
+				<div class="reviews__container-slider">
+
+					<button class="prev-btn-arrow"></button>
+
+					<div class="container-slider">
+						<div class="slider">
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews"> Первый Я заказала последний iPhone из США через ваш сервис, и доставка
+										прошла быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт
+										покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Я заказала последний iPhone из США через ваш сервис, и доставка прошла
+										быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Я заказала последний iPhone из США через ваш сервис, и доставка прошла
+										быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Я заказала последний iPhone из США через ваш сервис, и доставка прошла
+										быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Я заказала последний iPhone из США через ваш сервис, и доставка прошла
+										быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Я заказала последний iPhone из США через ваш сервис, и доставка прошла
+										быстро и без каких‑либо проблем. Гарантии качества и надёжная упаковка сделали мой опыт покупки
+										невероятно позитивным.</p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="content-slide">
+									<p class="paragraph-reviews">Последний </p>
+									<p class="name-user-reviews">Екатирина</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<button class="next-btn-arrow"></button>
+
+				</div>
+			</section>
+
+			<section class="question">
+				<h2 class=" title question__title">Остались вопросы</h2>
+				<form action="" class="question-form">
+					<div class="wrapper-question-input">
+						<input type="text" name="name" class="question-form__input" placeholder="Имя">
+						<input type="email" name="email" class="question-form__input" placeholder="Почта">
+						<input type="tel" name="phone" class="question-form__input" placeholder="Телефон">
+						<input type="text" name="subject" class="question-form__input" placeholder="Тема вопроса">
+					</div>
+					<textarea name="message" class="question-form__textarea" cols="30" rows="10"></textarea>
+					<button class="question-form__btn btn-common" type="submit">Оставить заявку</button>
+				</form>
+			</section>
+
+		</main>
+
+		<footer class="footer wrapper-width">
+			<div class="footer__head">
+				<div class="footer__logo-site">
+					<div class="logo-site">
+						<div class="logo-site__img-logo">
+							<img src="./image/logo.svg" alt="логотип">
+						</div>
+						<div class="logo-site__text logo-site__text--small">FromBoard Delivery</div>
+					</div>
+					<p class="copyright">
+						© 2024 Все права защищены. Магазин "Глобал-Доставка".
+					</p>
+				</div>
+
+				<ul class="list footer__list">
+					<li class="list__item"><a href="#about">О нас</a></li>
+					<li class="list__item"><a href="#services">Услуги</a></li>
+					<li class="list__item"><a href="#faq">FAQ</a></li>
+					<li class="list__item"><a href="#contacts">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__footer">
+				<div class="social-links">
+					<a href="https://www.facebook.com" class="social-link">Facebook</a>
+					<a href="https://www.instagram.com" class="social-link">Instagram</a>
+					<a href="https://www.twitter.com" class="social-link">Twitter</a>
+				</div>
+			</div>
+		</footer>
+
+	<script src="./main.js"></script>
+</body>
+
+</html>
