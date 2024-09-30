@@ -432,7 +432,9 @@ const initForm = () => {
 			alert('Форма отправлена успешно!');
 		} else {
 			form.addEventListener('input', ValidationEventInput);
+			form.addEventListener('keydown', ValidationEventInput);
 			alert('Пожалуйста, заполните все поля корректно.');
+
 		}
 	}
 	
@@ -462,6 +464,7 @@ const initForm = () => {
 			console.log('isEmptyInput(phoneInput)');
 			toggleValidationVisibility(phoneInput, true);
 			isValid = false;
+			phoneInput.value
 		}
 
 		if (isEmptyInput(weightInput)) {
@@ -482,7 +485,9 @@ const initForm = () => {
 	}
 
 	function ValidationEventInput(e) {
+
 		let input = e.target;
+		console.log(input);
 		if (input.classList.contains('shipping-calculator__email')) {
 			toggleValidationVisibility(input, !validateEmail(input))
 		}
@@ -523,7 +528,22 @@ const initForm = () => {
 	}
 }
 
-initForm();
+ initForm();
+
+
+// const phoneInput = document.querySelector('.shipping-calculator__phone');
+// console.log(phoneInput.value);
+
+
+// phoneInput.addEventListener('keydown', (e)=>{
+// 	console.log(e.target.value);
+// })
+
+
+
+
+
+
 
 
 const initBurgerMenu = () => {
