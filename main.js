@@ -415,7 +415,7 @@ const sliderReviews = () => {
 sliderReviews();
 
 
-const validateForm = () => {
+const initForm = () => {
 
 		const form = document.querySelector('.shipping-calculator');
 		form.addEventListener('submit', handleSubmit);
@@ -523,7 +523,7 @@ const validateForm = () => {
 	}
 }
 
-validateForm();
+initForm();
 
 
 const initBurgerMenu = () => {
